@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>MY FIRST WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+      <body>
+        <ul >
+
+           <li><a  href = "contact_me.html">Contact me</a></li>
+        <li><a href = "projects.html">My projects</a></li>
+        <li><a href = "home.html">Home</a></li>
+</ul>
+<section class="contacts">
+<center>
+  <img src="C:\Users\itzme\Pictures\Screenshots\Screenshot 2024-08-09 105702.png" alt="profile picture" width="200" style="border-radius: 50%;width: 200px;height: 200px;"> </center>            
+<center><h1>SNEHA</h1></center>
+<p><h4>ABOUT ME</h4></p>
+<p>As a dedicated and driven BTech Computer Science student, I am deeply passionate about harnessing technology to solve real-world problems and drive innovation. My academic journey has equipped me with a robust foundation in computer science principles, programming languages, and software development methodologies. I thrive in collaborative environments and am skilled in tackling complex technical challenges with creativity and analytical rigor. Beyond the classroom, I actively seek opportunities to apply my knowledge through internships, personal projects, and contributions to open-source communities.
+&nbsp;</p>
+</section>
+<section class="Contact">
+  <center><input  type="email" id="mail" placeholder="Your email">
+ <button onclick="sendEmail()">click for connection</button> </center> 
+ 
+<br>
+<div class="box">
+        <div class="project">
+            <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=800%2C800&ssl=1" width="100">
+            <h3>Internship</h3>
+            <p>Internship on python, flask, mongdob</p>
+
+        </div>
+
+        <div class="project">
+            <img src="https://media-cdn.oulu.fi/styles/main_image/s3/images/KaavojaLiitutaululla.jpg?itok=Abo3a-ME"
+                width="100">
+            <h3>Workshop</h3>
+            <p>Workshop on quarto</p>
+        </div>
+
+        <div class="project">
+            <img src="https://api.reliasoftware.com/uploads/web_development_is_important_176fa0618e.jpg"
+                width="100">
+            <h3>Workshop</h3>
+            <p>Workshop on Web Development</p>
+        </div>
+
+    </div>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://instagram.com"><img src="C:\Users\itzme\Desktop\images.jpg" alt="instagram" width="60"></a>
+     <a href="https://facebook.com"><img src="C:\Users\itzme\Desktop\images.png" alt="facebook" width="60"></a>
+      <a href="https://linkedin.com"><img src="C:\Users\itzme\Desktop\174857.png" alt="linkedin" width="60"></a>
+       <a href="https://wa.me/"><img src="C:\Users\itzme\Desktop\WhatsApp_icon.png.webp" alt="whatsapp"width="60"></a>
+</footer>
+<script type="text/javascript">
+  function sendEmail(){
+    var email= document.getElementById("mail").value;
+     var subject= "Request to Connect-reg";
+      var body= "Hello, I would like to connect with you.";
+      window.location.href= "mailto:"+encodeURIComponent(email)+"?subject="+encodeURIComponent(subject)+
+      "&body="+encodeURIComponent(body)+"&cc=snehas.csb@saintgits.org"
+    }
+  </script>
+  </body>
+  </html>
